@@ -1,0 +1,187 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.header {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+.sneaker-card {
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.sneaker-card img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.buy-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.buy-btn:hover {
+    background-color: #218838;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.buy-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: transform 0.2s, background-color 0.3s, box-shadow 0.3s;
+}
+
+/* Эффект при наведении */
+.buy-btn:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Эффект при нажатии */
+.buy-btn:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.sneaker-card {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Добавлена тень */
+    margin-bottom: 20px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out, box-shadow 0.3s ease-in-out;
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.sneaker-card:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+}
+
+/* Фото слева */
+.sneaker-card img {
+    width: 40%;
+    max-height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Контент справа */
+.sneaker-info {
+    width: 60%;
+    padding-left: 20px;
+}
+
+/* Анимация появления */
+.sneaker-card.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Медиа-запросы для мобильных */
+@media (max-width: 768px) {
+    .sneaker-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .sneaker-card img {
+        width: 100%;
+        max-height: 200px;
+    }
+
+    .sneaker-info {
+        width: 100%;
+        padding-left: 0;
+        padding-top: 10px;
+    }
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, textarea {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
